@@ -1,0 +1,158 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=ISO-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (Win98; U) [Netscape]">
+  <meta name="AUTHOR" content="Rob Leahy">
+  <meta name="CREATED" content="20000105;16334442">
+  <meta name="CHANGEDBY" content="Rob Leahy">
+  <meta name="CHANGED" content="20000106;9370761">
+  <title>Comp 139 Lab 2</title>
+</head>
+<body>
+<center>
+<h2> CAMOSUN COLLEGE</h2>
+</center>
+<center><font size="+1">COMPUTER SCIENCE DEPARTMENT</font></center>
+<center>
+<h1> <font size="+1">COMP 139 <b>LAB 2</b></font></h1>
+</center>
+<center>
+<p><br>
+<font size="+1">Due: Feb 18, 2011</font></p>
+</center>
+<p><br>
+</p>
+<center>
+<h3> A Simple List ADT</h3>
+</center>
+<h4> Background</h4>
+A simple List ADT will allow a client program to store, remove and
+retrieve data objects. This ADT should make it convenient for the
+client
+to refer to an item by its position in the list and to sort the list if
+necessary. In this lab you will create a simple List ADT that conforms
+to specifications that are provided below. <br>
+&nbsp;
+<h4> Problem Statement</h4>
+Read the specifications for the <b><tt><font size="+1">SimpleStringList</font></tt></b>
+ADT as defined in the <a href="./docs/SimpleStringList.html">html
+documentation</a>
+for <b><tt><font size="+1">SimpleStringList</font></tt></b>. Write the
+implementation that conforms to these specifications and test your work
+with the interface program called <b><tt>COMP139Lab2Driver</tt></b>.
+Your implementation must be done using a one-way linked linear list.
+Details about the implementation of the <b><tt><font size="+1">SimpleStringList</font></tt></b>
+class and the node class for the linked list will be discussed in the
+lectures..
+<p>The main program which can be used to test your code is called <b><tt>COMP139lab2Driver.class</tt></b>.
+To
+use this main program, copy it and all (12) of its inner
+classes&nbsp; to the folder that contains your <b><tt>SimpleStringList.class</tt></b>
+file. Then run <b><tt>COMP139Lab2Driver</tt></b>. This main program
+will look for and use a class file named <b><tt>SimpleStringList.class</tt></b>.&nbsp;</p>
+<p>You can try a working version of this lab by downloading and
+running the following jar file:&nbsp;
+<a href="Comp139Lab2.jar"><br>
+Comp139Lab2.jar</a> <br>
+</p>
+<p><br>
+</p>
+<p>To
+run a&nbsp; jar file:<br>
+</p>
+<ol>
+  <li>Start a Command Prompt.&nbsp;&nbsp; (<span
+ style="font-family: monospace; font-weight: bold;">Start/Programs/Accessories/Command
+Prompt</span>)<br>
+  </li>
+  <li>From the command line, navigate to the directory that contains
+the jar file.</li>
+  <li>type:&nbsp; <span
+ style="font-family: monospace; font-weight: bold;">java -jar
+Comp139Lab2.jar</span></li>
+</ol>
+<p>&nbsp; All the support files are in a zip file called&nbsp; <a
+ href="Comp139Lab2.zip">Comp139Lab2.zip</a>.
+This zip file
+contains a runnable jar file, all the class files that you need to
+solve the lab, and all
+documentation including this html page.&nbsp; <br>
+</p>
+<p>To create a NetBeans project that uses the distributed class files,
+first create a directory structure that looks something like this:<br>
+</p>
+<big><big><span style="font-family: monospace; font-weight: bold;">comp139</span></big></big><br>
+<big><big><span style="font-family: monospace; font-weight: bold;"></span></big></big>
+<div style="margin-left: 40px;"><big><big><span
+ style="font-family: monospace; font-weight: bold;">lab0</span></big></big><br
+ style="font-family: monospace; font-weight: bold;">
+</div>
+<div style="margin-left: 40px;"><big><big><span
+ style="font-family: monospace; font-weight: bold;">lab1</span></big></big><br
+ style="font-family: monospace; font-weight: bold;">
+<big><big><span style="font-family: monospace; font-weight: bold;">lab2</span></big></big><br
+ style="font-family: monospace; font-weight: bold;">
+<div style="margin-left: 40px;"><span
+ style="font-family: monospace; font-weight: bold;"><big><big>driverclasses</big></big>&nbsp;</span>&nbsp;&nbsp;
+(this
+folder will contain all the class files from my distribution)<br>
+<big><big><span style="font-family: monospace; font-weight: bold;">source</span></big></big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(this
+folder will contain your source code)<br>
+<span style="font-family: monospace; font-weight: bold;"><big><big>netbeansprojectfiles</big></big>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(this
+folder will contain the NetBeans project files.)<br>
+</div>
+</div>
+<p><br>
+</p>
+<p>Then,&nbsp; you need to tell NetBeans where the class filse are, and
+which one is the main class. Here are the steps:<br>
+</p>
+<ol>
+  <li>Right click on the project name and select "properties". </li>
+  <li>Select "Libraries" from the Categories list.</li>
+  <li>Click the button labeled "Add JAR/Folder"</li>
+  <li>Navigate to and highlite the folder that contains the distributed
+class files. This will be 'driverclasses' if you followed the above
+structure.</li>
+  <li>Click "Open" then "OK"</li>
+</ol>
+To set the main class:
+<ol>
+  <li>Right click on the project name and select "properties". </li>
+  <li>Select "Run" from the Categories list.</li>
+  <li>Type "COMP139Lab2Driver" in the Main Class edit box</li>
+  <li>Click "OK"<br>
+  </li>
+</ol>
+<p></p>
+<h4> Additional Information</h4>
+<ol>
+  <ul>
+    <li>Use a one-way sequential linked list to implement the list.</li>
+    <li> You must provide a method that sorts the list. (see the specs)
+You may use any algorithm you wish but a simple solution is to create a
+new list by inserting each element from the old list into the new list
+while maintaing ascending alphabetic order during each insert. Once the
+new list has been created (or while it is being created) the old list
+nodes can be destroyed.</li>
+    <li> You may write and use your own interface (main program) to
+test
+your code, but in the end, your SimpleStringList must work with my main
+program. Do not modify my main program (<b><tt>COMP139Lab2Driver).</tt></b></li>
+  </ul>
+</ol>
+<h4>Due Date:&nbsp; February 18, 2011</h4>
+Submission Requirements: A printout of your java code.<br>
+&nbsp; <br>
+&nbsp; &nbsp;<br>
+&nbsp; <br>
+&nbsp; <br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title></title>
+</head>
+  <body>
+ 
+<div align="center"><big><big> Example of an array implementation of a one-way 
+linked list </big></big><br>
+ </div>
+ 
+<div align="center">A linked list of free elements is also shown  <br>
+<br>
+<br>
+<br>
+Data array<br>
+ 
+<table cellpadding="2" cellspacing="2" border="0" width="300"
+ align="center">
+    <tbody>
+     <tr>
+              <td valign="top" width="50" align="center"><small><small>0<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>1<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>2<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>3<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>4<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>5<br>
+       </small></small></td>
+     </tr>
+                                                
+  </tbody> 
+</table>
+ 
+<table cellpadding="2" cellspacing="2" border="1" width="300">
+   <tbody>
+          <tr>
+              <td valign="top" width="50" align="center">"two"<br>
+       </td>
+       <td valign="top" width="50" align="center">"one"<br>
+       </td>
+       <td valign="top" width="50" align="center">"four"<br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center">"three"<br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+     </tr>
+                                           
+  </tbody> 
+</table>
+ <br>
+<br>
+Links array<br>
+<table cellpadding="2" cellspacing="2" border="0" width="300"
+ align="center">
+    <tbody>
+     <tr>
+              <td valign="top" width="50" align="center"><small><small>0<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>1<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>2<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>3<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>4<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>5<br>
+       </small></small></td>
+     </tr>
+                                                
+  </tbody> 
+</table>
+ </div>
+ 
+<table cellpadding="2" cellspacing="2" border="1" width="300"
+ align="center">
+   <tbody>
+          <tr>
+              <td valign="top" width="50" align="center">4<br>
+       </td>
+       <td valign="top" width="50" align="center">0<br>
+       </td>
+       <td valign="top" width="50" align="center">-1<br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center">2<br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+     </tr>
+                                           
+  </tbody> 
+</table>
+<div align="center"><br>
+<br>
+Freelist array<br>
+</div>
+<div align="center">
+<table cellpadding="2" cellspacing="2" border="0" width="300"
+ align="center">
+    <tbody>
+     <tr>
+              <td valign="top" width="50" align="center"><small><small>0<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>1<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>2<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>3<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>4<br>
+       </small></small></td>
+       <td valign="top" width="50" align="center"><small><small>5<br>
+       </small></small></td>
+     </tr>
+                                                
+  </tbody> 
+</table>
+</div>
+<table cellpadding="2" cellspacing="2" border="1" width="300"
+ align="center">
+    <tbody>
+          <tr>
+              <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center">5<br>
+       </td>
+       <td valign="top" width="50" align="center"><br>
+       </td>
+       <td valign="top" width="50" align="center">-1<br>
+       </td>
+     </tr>
+                                           
+  </tbody> 
+</table>
+<br>
+<b><tt>listHead = 1<br>
+freelistHead = 3</tt></b><br>
+<br>
+This figure shows a one-way linked list of strings implemented in an array.
+To follow the list, begin with <tt>listHead</tt>.&nbsp; The value of <tt>listHead</tt>
+is the index of the <b>data </b>array that contains the first data item (a
+string)&nbsp; in the list. The corresponding element in the <b>links </b>array
+contains the index of the next item in the <b>data </b>array. Follow the
+links in this fashion until you reach an index value of &#8211;1, indicating end
+of list.<br>
+<br>
+<tt>freelistHead </tt>and the free list array represent a linked list of
+the empty (unused) elements of the <b>data </b>array.<br>
+<br>
+<br>
+<br>
+</body>
+</html>

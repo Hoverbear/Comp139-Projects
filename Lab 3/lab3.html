@@ -1,0 +1,113 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=ISO-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (Win98; U) [Netscape]">
+  <meta name="AUTHOR" content="Darrell Pfeifer">
+  <meta name="CREATED" content="20000105;16334442">
+  <meta name="CHANGEDBY" content="Darrell Pfeifer">
+  <meta name="CHANGED" content="20000106;9370761">
+  <meta name="Author" content="Rob Leahy">
+  <title>SimpleListADT</title>
+</head>
+<body>
+<center>
+<h2> CAMOSUN COLLEGE</h2>
+</center>
+<center><font size="+1">COMPUTER SCIENCE DEPARTMENT</font></center>
+<center>
+<h1> <font size="+1">COMP 139 <b>LAB 3</b></font></h1>
+</center>
+<center>
+<p><br>
+<font size="+1">Due: March 4, 2011<br>
+</font></p>
+</center>
+<p>&nbsp;<br>
+</p>
+<center>
+<h3> A Simple List ADT (modified)</h3>
+</center>
+<h4> Background</h4>
+In the previous lab you implemented a simple ListADT using a
+dynamically allocated linear linked list. In this lab you will modify
+the simple ListADT so that:
+<ol>
+  <li>Arrays are used to implement the linked list. &nbsp;See the
+'Additional
+information' section (below) for more information.</li>
+  <li>The ListADT provides an iterator()&nbsp; method for use by the
+client. <br>
+  </li>
+  <li>The data is sorted using a Quicksort algorithm.<br>
+  </li>
+</ol>
+<h4> Problem Statement</h4>
+&nbsp;Modify your implementation of <b><tt><font size="+1">SimpleStringList</font></tt></b>
+class (call it <span style="font-weight: bold; font-family: monospace;"><big>SimpleComparableList</big>)</span>
+but do not deviate from the specification as defined in the <a
+ href="./Doc/SimpleComparableList.html">html documentation</a>. Your
+modifications
+will
+include
+changing the way you store the list items, changing the algorithm that
+you
+use to sort the list, and providing an iterator method.
+<p>Download <a href="./Comp139Lab3.zip">Comp139Lab3.zip</a> and
+extract all files. The zip file contains the lab instructions (this
+file) as well as :<br>
+</p>
+<ul>
+  <li>&nbsp;documentation (in the Doc folder)<br>
+  </li>
+  <li>&nbsp;the required class files (for the driver)<br>
+  </li>
+</ul>
+<p>Once the files have been extracted from the .zip file, you can open
+the project using NetBeans. Go to menu item "File" and then "Open
+Project...". Navigate to 'NetBeansProjectFiles', which is a directory
+that you just extracted. After the project has openend, you can add
+your source files to the 'source' directory.<br>
+</p>
+<p>The main program which can be used to test your code will be similar
+to the one used in the previous lab. To
+use this
+main program, refer to the instructions in previous lab.&nbsp; </p>
+<h4> Additional Information</h4>
+<ol>
+  <ul>
+    <li> Use arrays to implement the list. To do this you will need the
+following arrays:</li>
+    <ul>
+      <li>an array of Comparable to store the data</li>
+      <li>an array of &nbsp;integers to represent the linked structure.
+The integers are indexes into the data array.</li>
+      <li>an array of integers to represent a list of free (unused)
+elements in the data array.<br>
+        <br>
+Look at this <a href="./lab3hints.html">diagram</a> which is an
+example
+of how to use these three arrays<br>
+        <br>
+      </li>
+    </ul>
+    <li>Sort the list using a Quicksort algorithm.</li>
+    <li> You may write and use your own interface (main program) but in
+the end, your <span style="font-weight: bold; font-family: monospace;"><big>SimpleComparableList</big>
+      </span>must work with my main program.</li>
+    <li>Write an inner class which implements the Iterator interface.
+You can instantiate this class when the iterator() method is called.<br>
+    </li>
+  </ul>
+</ol>
+<h4> Due Date:&nbsp; <font size="+1">March 4, 2011</font></h4>
+Submission Requirements: A printout of your java code.. <br>
+&nbsp; <br>
+&nbsp; <br>
+<br>
+<br>
+<br>
+</body>
+</html>
